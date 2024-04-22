@@ -27,6 +27,15 @@ public static class MauiProgram
 		builder.Services.AddHttpClient(TmdbService.TmdbHttpClientName,
 			httpClient => httpClient.BaseAddress = new Uri("https://api.themoviedb.org"));
 
+		builder.Services.AddSingleton<TmdbService>();
+		builder.Services.AddSingleton<HomeViewModel>();
+		builder.Services.AddSingleton<MainPage>();
+
+		builder.Services.AddSingleton<CategoriesViewModel>();
+		builder.Services.AddSingleton<CategoriesPage>();
+
+		builder.Services.AddTransientWithShellRoute<DetailsPage, DetailsViewModel>(nameof(DetailsPage));
+
 		return builder.Build();
 	}
 }
