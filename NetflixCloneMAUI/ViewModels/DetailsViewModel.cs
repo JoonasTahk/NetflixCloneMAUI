@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ViewModels
+namespace NetflixCloneMAUI.ViewModels
 {
-    internal class DetailsViewModel
+    public partial class DetailsViewModel : ObservableObject
     {
     }
 }
