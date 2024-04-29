@@ -40,7 +40,7 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
+    
     <ScrollView BackgroundColor="Black"
                 x:Name="pageScrollView">
         <Grid>
@@ -59,7 +59,7 @@
                         <Setter Property="IsVisible" Value="True"/>
                     </DataTrigger>
                 </VerticalStackLayout.Triggers>
-
+                
                 <WebView Source="{Binding MainTrailerUrl}"
                          HeightRequest="250"/>
 
@@ -81,7 +81,7 @@
                             BackgroundColor="White"
                             TextColor="Black"
                             Style="{x:StaticResource btn}"/>
-
+                    
                     <Button Text="Download" 
                             BackgroundColor="Gray"
                             Style="{x:StaticResource btn}"/>
@@ -124,7 +124,7 @@
                                    Style="{x:StaticResource btntext}"/>
                         </VerticalStackLayout>
                     </Grid>
-
+                    
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Margin="5">
@@ -133,7 +133,7 @@
                     <Grid RowDefinitions="Auto, Auto"
                           ColumnDefinitions="Auto, Auto"
                           ColumnSpacing="15">
-
+                        
                         <VerticalStackLayout Grid.Row="0"
                                              Grid.Column="0">
                             <BoxView HeightRequest="4"
@@ -147,7 +147,7 @@
                                 </Label.GestureRecognizers>
                             </Label>
                         </VerticalStackLayout>
-
+                        
                         <VerticalStackLayout Grid.Row="0"
                                              Grid.Column="1">
                             <BoxView HeightRequest="4"
@@ -162,7 +162,7 @@
                             </Label>
                         </VerticalStackLayout>
                     </Grid>
-
+                    
                 </VerticalStackLayout>
 
                 <Border BackgroundColor="Black"
@@ -198,7 +198,7 @@
                                                HorizontalOptions="Center"
                                                Aspect="AspectFit"/>
                                     </Border>
-
+                                    
                                     <Label Grid.Row="1" 
                                            Text="{Binding name}" />
                                     <Grid.GestureRecognizers>
@@ -210,7 +210,7 @@
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-
+                    
                 </Border>
 
                 <Border BackgroundColor="Black"
@@ -239,11 +239,11 @@
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </FlexLayout>
-
+                    
                 </Border>
 
             </VerticalStackLayout>
         </Grid>
     </ScrollView>
-
+    
 </ContentPage>

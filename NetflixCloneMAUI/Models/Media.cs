@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string DisplayTitle { get; set; }
-        public string MediaType { get; set; } 
+        public string MediaType { get; set; } // "movie" or "tv"
 
         public string Thumbnail { get; set; }
         public string ThumbnailSmall { get; set; }

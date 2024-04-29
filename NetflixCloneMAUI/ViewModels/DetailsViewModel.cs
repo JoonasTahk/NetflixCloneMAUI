@@ -69,11 +69,11 @@ namespace NetflixCloneMAUI.ViewModels
             }
             finally
             {
-                IsBusy = false;
+                IsBusy = false; 
             }
 
             var similarMedias = await similarMediasTask;
-            if (similarMedias?.Any() == true)
+            if(similarMedias?.Any() == true)
             {
                 foreach (var media in similarMedias)
                 {
@@ -93,7 +93,7 @@ namespace NetflixCloneMAUI.ViewModels
         }
 
         [RelayCommand]
-        private void SetMainTrailer(string videoKey) =>
+        private void SetMainTrailer(string videoKey) => 
             MainTrailerUrl = GenerateYoutubeUrl(videoKey);
 
         private static string GenerateYoutubeUrl(string videoKey) =>
